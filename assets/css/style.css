@@ -1,0 +1,45 @@
+/* LOGIN CSS */
+.badge {
+	margin-left: 3px;
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+	
+}
+
+img{
+	width: 750px;
+	height: 562.5px;
+	margin-left: -100px;
+}
+
+.login{
+	border: 1px;
+	border: solid;
+	border-inline: 1px;
+	border-color: #B2B2B2;
+	margin-right: 100px;
+}
+
+.logo-login{
+	display: flex;
+	justify-content: space-between;
+}
+
+h4{
+	margin-right: 110px;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+input{
+	border-radius: 5px;
+	width:100px;
+	height: 40px;
+	text-align: center;
+	margin-left: 20px;
+}
