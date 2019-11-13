@@ -1,5 +1,38 @@
 <?php $this->load->view('templates/header')?>
+<style>
+/* .table{
+    width:820px;
+    margin-top:10px;
+    margin-left: 40px;
+    margin-right: -90px;
+    border-radius: 10px;
+} */
+table {
+    width:820px;
+    margin-top:10px;
+    margin-left: 40px;
+    margin-right: -90px;
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
 
+th, td {
+  padding: 1em;
+  border-bottom: 2px solid white; 
+}
+th{
+    background:#51819A;
+}
+td{
+    background: #ffffff;
+}
+
+.css-mine {
+  margin-top: 2em;
+  clear: both;
+}
+</style>
 <body>
     <div class="container" style="margin-top:130px;">
         <!-- ini side bar -->
@@ -47,7 +80,7 @@
                 <div class="">
                     <img src="<?= base_url('assets/women.png')?>" style="width:110px;">
                 </div>
-                <div class="alert alert-light" role="alert" style="width:450px; height:50px; margin: 10px;margin-top:30px;border-radius:15px">
+                <div class="alert alert-light" role="alert" style="width:350px; height:50px; margin: 10px;margin-top:30px;border-radius:15px;background-color:#C3DF99;opacity:72%;color:black">
                    Jawabanmu sudah berhasil diupload~
                 </div>
             </div>
@@ -57,6 +90,73 @@
             <div class="container konten">
                 <div class="" style="background-color: white; margin-top:0px; margin-left:190px; width:900px; height:430px; border-radius:10px">
                     <h6>Hasil Upload Jawaban</h6>
+                    <!-- <table class="table">
+                        <thead class="thead" style="background-color:#51819A">
+                            <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">MATA PRAKTIKUM</th>
+                            <th scope="col">MODUL</th>
+                            <th scope="col">TES AWAL</th>
+                            <th scope="col">TES JURNAL</th>
+                            <th scope="col">TES AKHIR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                    <table class="data">
+                        <tr>
+                        <th scope="col">No</th>
+                            <th scope="col">MATA PRAKTIKUM</th>
+                            <th scope="col">MODUL</th>
+                            <th scope="col">TES AWAL</th>
+                            <th scope="col">TES JURNAL</th>
+                            <th scope="col">TES AKHIR</th>
+                        </tr>
+                        <tr>
+                            <td>Entry Last Line 1</td>
+                            <td>Entry Last Line 2</td>
+                            <td>Entry Last Line 3</td>
+                            <td>Entry Last Line 4</td>
+                            <td>Entry First Line 5</td>
+                            <td>Entry First Line 5</td>
+                        </tr>
+                        <tr>
+                            <td>Entry First Line 1</td>
+                            <td>Entry First Line 2</td>
+                            <td>Entry First Line 3</td>
+                            <td>Entry First Line 4</td>
+                            <td>Entry First Line 5</td>
+                            <td>Entry First Line 5</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Entry Line 1</td>
+                            <td>Entry Line 2</td>
+                            <td>Entry Line 3</td>
+                            <td>Entry Line 4</td>
+                            <td>Entry First Line 5</td>
+                            <td>Entry First Line 5</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <!-- end konten -->

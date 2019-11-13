@@ -55,8 +55,84 @@
 
             <!-- ini konten FORM -->
              <div class="container konten">
-                <div class="" style="background-color: white; margin-top:0px; margin-left:190px; width:900px; height:430px; border-radius:10px">
+                <div class="" style="background-color: white; margin-bottom:50px;margin-top:0px; margin-left:190px; width:900px; height:690px; border-radius:10px">
                     <h6>Form Upload Jawaban</h6>
+                    <form>
+                        <div class="form-group row" style="margin-left:5px">
+                            <label for="inputPassword3" class="col-sm-3 col-form-label">Praktikum</label>
+                            <select class="form-control col-sm-4" style="left:14px">
+                                <option>Jaringan Komputer</option>
+                            </select>
+                        </div>
+                        <div class="form-group row" style="margin-left:5px">
+                            <label for="inputPassword3" class="col-sm-3 col-form-label">Modul</label>
+                            <select class="form-control col-sm-4" style="left:14px">
+                                <option>Modul 1</option>
+                                <option>Modul 2</option>
+                                <option>Modul 3</option>
+                                <option>Modul 4</option>
+                                <option>Modul 5</option>
+                                <option>Modul 6</option>
+                                <option>Modul 7</option>
+                                <option>Modul 8</option>
+                                <option>Modul 9</option>
+                                <option>Modul 10</option>
+                            </select>
+                        </div>
+                        <div class="form-group row" style="margin-left:5px">
+                            <label class="col-sm-3 col-form-label">Kelas</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="inputPassword3" placeholder="IF-41-10" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row" style="margin-left:5px">
+                            <label class="col-sm-3 col-form-label">Jadwal Praktikum</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="inputPassword3" placeholder="Jumat, 2 November 2019" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row" style="margin-left:5px">
+                            <label class="col-sm-3 col-form-label">Asprak</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="inputPassword3" placeholder="Rafif Dalimunthe" readonly>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="form-group row" style="margin-left:5px">
+                            <label class="col-sm-3 col-form-label">NIM</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="inputPassword3" placeholder="1301174402" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row" style="margin-left:5px">
+                            <label class="col-sm-3 col-form-label">Authentifikasi</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="inputPassword3" placeholder="masukkan kode authentifikasi..">
+                            </div>
+                        </div>
+                        <div class="form-group row" style="margin-left:5px">
+                            <label class="col-sm-3 col-form-label">Upload File Jawaban</label>
+                            <div class="col-sm-4">
+                                <input type="file" class="files" id="imgInp"  name="myFiles"/>
+                                <small id="passwordHelpInline" class="text" style="color:red;">
+                                    *file zip/rar
+                                </small>
+                                
+                            </div>
+                        </div>
+                        <div class="form-group row" style="margin-left:5px">
+                            <label  class="col-sm-3 col-form-label"></label>
+                            <div class="col-sm-4">
+                                <a href="<?= base_url('index.php/hasilUpload')?>">
+                                    <button type="button" class="btn shadow" style="width:150px;background-color: #2E5F78;color:white;opacity:69%;border-radius:7px"> Upload Jawaban</button>
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </form>
+                    <!-- end form -->
                 </div>
             </div>
             <!-- end konten -->
@@ -65,4 +141,5 @@
         <!-- end main -->
     </div>
     <!-- end container -->
+    
 </body>
