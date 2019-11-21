@@ -22,6 +22,7 @@ th, td {
   border-bottom: 2px solid white; 
 }
 th{
+    color: white;
     background:#51819A;
 }
 td{
@@ -132,7 +133,7 @@ td{
                             <th scope="col">TES AKHIR</th>
                         </tr>
                         <tr>
-                            <td>Entry Last Line 1</td>
+                            <td>1</td>
                             <td>Entry Last Line 2</td>
                             <td>Entry Last Line 3</td>
                             <td>Entry Last Line 4</td>
