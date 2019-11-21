@@ -75,7 +75,7 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Kembali</button>
-            <a href="<?= base_url('login')?>">
+            <a href="<?= base_url('praktikan/logout')?>">
                 <button type="button" class="btn btn-primary" style="background-color: #2E5F78;color:white">Keluar</button>
             </a>
         </div>
@@ -108,7 +108,7 @@
                 <img class="logo-profile" src="<?= base_url('assets/intersection1.png')?>" style="width:30px;" alt="">
             </a>
             <div class="dropdown-menu" style="left:1100px">
-                <a class="dropdown-item" href="<?= base_url('index.php/editProfile')?>">Edit Profile</a>
+                <a class="dropdown-item" href="<?= base_url('praktikan/editProfile')?>">Edit Profile</a>
                 <a class="dropdown-item" href="#ubahPass" data-toggle="modal">Ubah Password</a>
             </div>
         </div>

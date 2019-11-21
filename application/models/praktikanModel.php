@@ -1,6 +1,6 @@
 <?php
  // write your name and student id here
-class Mahasiswa_model extends CI_model
+class praktikanModel extends CI_model
 {
 
 	public function getAllMahasiswa()
@@ -30,25 +30,30 @@ class Mahasiswa_model extends CI_model
 		$this->db->delete('mahasiswa');
 	}
 
-	public function getMahasiswaById($id)
+	public function getMahasiswaById($nim)
 	{
 		//get data mahasiswa based on id 
-		$this->db->where('id', $id);
-		$data = $this->db->get('mahasiswa');
-		return $data->result_array(); ///not clear.. data null
+		return $this->db->get_where('praktikan',['nim'=>$nim])->row_array();
 	}
 
-	public function ubahDataMahasiswa()
+	public function editProfil($data)
 	{
-		$data = [
-			"nama" => $this->input->post('nama', true),
-			"nim" => $this->input->post('nim', true),
-			"email" => $this->input->post('email', true),
-			"jurusan" => $this->input->post('jurusan', true),
-		];
-		//use query builder class to update data mahasiswa based on id
-		$this->db->where('id', $data['id']);
-		$this->db->update('mahasiswa', $data);
+		$sql = 'update praktikan set tempatLahir ="'.$data["tempatLahir"].'"where praktikan.nim = "'.$data["nim"].'"';
+		$this->db->query($sql);
+		$sql = 'update praktikan set tanggalLahir ="'.$data["tanggalLahir"].'"where praktikan.nim = "'.$data["nim"].'"';
+		$this->db->query($sql);
+		$sql = 'update praktikan set gender ="'.$data["gender"].'"where praktikan.nim = "'.$data["nim"].'"';
+		$this->db->query($sql);
+		$sql = 'update praktikan set agama ="'.$data["agama"].'"where praktikan.nim = "'.$data["nim"].'"';
+		$this->db->query($sql);
+		$sql = 'update praktikan set alamat ="'.$data["alamat"].'"where praktikan.nim = "'.$data["nim"].'"';
+		$this->db->query($sql);
+		$sql = 'update praktikan set kontak ="'.$data["kontak"].'"where praktikan.nim = "'.$data["nim"].'"';
+		$this->db->query($sql);
+		$sql = 'update praktikan set pertanyaanKeamanan ="'.$data["pertanyaanKeamanan"].'"where praktikan.nim = "'.$data["nim"].'"';
+		$this->db->query($sql);
+		$sql = 'update praktikan set jawabanKeamanan ="'.$data["jawabanKeamanan"].'"where praktikan.nim = "'.$data["nim"].'"';
+		$this->db->query($sql);
 	}
 
 	public function cariDataMahasiswa()

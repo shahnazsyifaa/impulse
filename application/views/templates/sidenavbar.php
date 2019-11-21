@@ -3,7 +3,7 @@
         <div class="sidenav">
                 <div class="profile">
                     <img src="<?= base_url('assets/intersection1.png')?>" style="width:100px;" alt="">
-                    <p>Shahnaz Nur Asyifa</p>
+                    <p><?= $this->session->userdata('nama')?></p>
                 </div>
                 <a href="<?= base_url('index.php/Dashboard')?>">
                     <img src="<?= base_url('assets/home.png')?>" style="width:20px;margin-right:10px;margin-left:-25px" alt="">
