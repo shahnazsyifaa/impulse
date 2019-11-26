@@ -89,7 +89,7 @@ td{
 
             <!-- ini konten HASIL -->
             <div class="container konten">
-                <div class="" style="background-color: white; margin-top:0px; margin-left:190px; width:900px; height:430px; border-radius:10px">
+                <div class="" style="background-color: white; margin-top:0px;margin-bottom:30px; margin-left:190px; width:900px; height:595px; border-radius:10px">
                     <h6>Hasil Upload Jawaban</h6>
                     <!-- <table class="table">
                         <thead class="thead" style="background-color:#51819A">
@@ -134,28 +134,68 @@ td{
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>Entry Last Line 2</td>
-                            <td>Entry Last Line 3</td>
-                            <td>Entry Last Line 4</td>
-                            <td>Entry First Line 5</td>
-                            <td>Entry First Line 5</td>
+                            <td>Jaringan Komputer</td>
+                            <td>Modul 1</td>
+                            <td>10</td>
+                            <td>60</td>
+                            <td>25</td>
                         </tr>
                         <tr>
-                            <td>Entry First Line 1</td>
-                            <td>Entry First Line 2</td>
-                            <td>Entry First Line 3</td>
-                            <td>Entry First Line 4</td>
-                            <td>Entry First Line 5</td>
-                            <td>Entry First Line 5</td>
+                            <td>2</td>
+                            <td>Jaringan Komputer</td>
+                            <td>Modul 2</td>
+                            <td>10</td>
+                            <td>57</td>
+                            <td>10</td>
                         </tr>
                         
                         <tr>
-                            <td>Entry Line 1</td>
-                            <td>Entry Line 2</td>
-                            <td>Entry Line 3</td>
-                            <td>Entry Line 4</td>
-                            <td>Entry First Line 5</td>
-                            <td>Entry First Line 5</td>
+                            <td>3</td>
+                            <td>Jaringan Komputer</td>
+                            <td>Modul 3</td>
+                            <td>10</td>
+                            <td>60</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Jaringan Komputer</td>
+                            <td>Modul 4</td>
+                            <td>10</td>
+                            <td>50</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Jaringan Komputer</td>
+                            <td>Modul 5</td>
+                            <td>10</td>
+                            <td>60</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Jaringan Komputer</td>
+                            <td>Modul 6</td>
+                            <td>10</td>
+                            <td>60</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Jaringan Komputer</td>
+                            <td>Modul 7</td>
+                            <td>10</td>
+                            <td>52</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Jaringan Komputer</td>
+                            <td>Modul 8</td>
+                            <td>10</td>
+                            <td>60</td>
+                            <td>22</td>
                         </tr>
                     </table>
                 </div>
