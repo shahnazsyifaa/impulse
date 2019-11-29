@@ -8,11 +8,16 @@
         <div class="container konten" style="padding:5px">
                 <div class="txt" style="background-color: white;margin-left:170px; width:250px; height:310px; border-radius:10px;padding-top:20px">
                     <div class="profile">
+                    <?php if ($this->session->userdata('gender') == "Perempuan") {?>
                         <img src="<?= base_url('assets/intersection1.png')?>" style="width:100px;" alt="">
+                    <?php }else{ ?>
+                        <img src="<?= base_url('assets/men.jpg')?>" style="width:100px;" alt="">
+                    <?php }?>
                         <p><?= $this->session->userdata('nama')?></p>
                     </div>
                 </div>
         </div>
+
         <div class="container konten">
                 <div class="txt" style="background-color: white;width:667px; height:710px; border-radius:10px; margin-bottom:30px">
                     <h6>Edit Profile</h6>
@@ -21,7 +26,7 @@
                         <div class="form-group row"  style="margin-left:5px">
                             <label for="inputPassword3" class="col-sm-3 col-form-label">Tempat Tanggal Lahir</label>
                                 <div class="col-sm-4">
-                                <input type="text" class="form-control" placeholder="tempat.." name="tempatLahir" value="<?= set_value('tempatLahir') ?>">
+                                <input type="text" class="form-control" placeholder="tempat.." name="tempatLahir" value="<?= $this->session->userdata('tanggalLahir') ?>">
                                 <?=form_error('tempatLahir','<small class="text-danger">','</small>');?>
                                 </div>
                                 <div class="col-sm-4">
@@ -108,7 +113,11 @@
         <div class="container konten" style="padding:5px">
                 <div class="txt" style="background-color: white;margin-left:170px; width:250px; height:310px; border-radius:10px;padding-top:20px">
                     <div class="profile">
+                    <?php if ($this->session->userdata('gender') == "Perempuan") {?>
                         <img src="<?= base_url('assets/intersection1.png')?>" style="width:100px;" alt="">
+                    <?php }else{ ?>
+                        <img src="<?= base_url('assets/men.jpg')?>" style="width:100px;" alt="">
+                    <?php }?>
                         <p><?= $this->session->userdata('nama')?></p>
                     </div>
                 </div>
@@ -125,13 +134,14 @@
                                 <?=form_error('tempatLahir','<small class="text-danger">','</small>');?>
                                 </div>
                                 <div class="col-sm-4">
-                                <input type="date" class="form-control"  name="date" value="<?= $this->session->userdata('date') ?>">
+                                <input type="date" class="form-control"  name="date" value="<?= $this->session->userdata('tanggalLahir') ?>">
                                 <?=form_error('date','<small class="text-danger">','</small>');?>
                             </div>
                         </div>
                         <div class="form-group row" style="margin-left:5px">
                             <label for="inputPassword3" class="col-sm-3 col-form-label">Jenis Kelamin</label>
                             <select class="form-control col-sm-7" style="left:14px" name= "gender" value="<?= $this->session->userdata('gender') ?>">
+                                <option selected> <?= $this->session->userdata('gender') ?> </option>
                                 <option>Perempuan</option>
                                 <option>Laki-laki</option>
                             </select>
@@ -140,6 +150,7 @@
                         <div class="form-group row" style="margin-left:5px">
                             <label for="inputPassword3" class="col-sm-3 col-form-label">Agama</label>
                             <select class="form-control col-sm-7" style="left:14px" name="agama" selected value="<?= $this->session->userdata('agama') ?>">
+                                <option selected> <?= $this->session->userdata('agama') ?></option>
                                 <option>Islam</option>
                                 <option>Khatolik</option>
                                 <option>Budha</option>

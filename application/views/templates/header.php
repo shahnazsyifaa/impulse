@@ -42,29 +42,30 @@
                                     <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body">
-                                <form style="padding:5px;">
+                                <div class="modal-body" >
+                                <form style="padding:5px;" method="post" action="<?= base_url('praktikan/ubahPassword') ?>">
                                     <div class="row" style="margin-top:10px">
                                         <div class="col-sm-12">
-                                        <input type="text" class="form-control" placeholder="Password Lama">
+                                        <input type="text" class="form-control" placeholder="Password Lama" name="passLama">
                                         </div>
                                     </div>
                                     <div class="row" style="margin-top:10px">
                                         <div class="col-sm-12">
-                                        <input type="text" class="form-control" placeholder="Password Baru">
+                                        <input type="text" class="form-control" placeholder="Password Baru" name="passBaru">
                                         </div>
                                     </div>
                                     <div class="row" style="margin-top:10px">
                                         <div class="col-sm-12">
-                                        <input type="text" class="form-control" placeholder="Konfirmasi Password">
+                                        <input type="text" class="form-control" placeholder="Konfirmasi Password" name="rePass">
                                         </div>
+                                    </div>
+                                
+                                </div>
+                                    <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                                            <button type="submit" class="btn btn-secondary" data-dismiss="modal" style="background-color: #2E5F78;color:white">Ubah</button>
                                     </div>
                                 </form>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #2E5F78;color:white">Ubah</button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -116,7 +117,11 @@
         <!-- profile -->
         <div class="">
             <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown">
+            <?php if ($this->session->userdata('gender') == "Perempuan") {?>
                 <img class="logo-profile" src="<?= base_url('assets/intersection1.png')?>" style="width:30px;" alt="">
+            <?php }else{ ?>
+                <img class="logo-profile" src="<?= base_url('assets/men.jpg')?>" style="width:30px;" alt="">
+            <?php }?>
             </a>
             <div class="dropdown-menu" style="left:1100px">
                 <a class="dropdown-item" href="<?= base_url('praktikan/editProfile')?>">Edit Profile</a>

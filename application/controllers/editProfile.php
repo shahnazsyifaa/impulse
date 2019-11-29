@@ -20,6 +20,7 @@ class editProfile extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('editProfile');
+		var_dump($this->session->userdata('tanggalLahir'))
+		//$this->load->view('editProfile');
 	}
 }

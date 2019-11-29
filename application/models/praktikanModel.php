@@ -71,4 +71,8 @@ class praktikanModel extends CI_model
 		return $query->result_array();
 		
 	}
+	public function ubahPass($newPass){
+		$this->db->where('nim',$this->session->userdata('nim'));
+		$this->db->update('password',$newPass);
+	}
 }

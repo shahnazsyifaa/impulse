@@ -53,7 +53,11 @@ display: block;
         <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/header.css">
         <div class="sidenav">
                 <div class="profile">
+                <?php if ($this->session->userdata('gender') == "Perempuan") {?>
                     <img src="<?= base_url('assets/intersection1.png')?>" style="width:100px;" alt="">
+                <?php }else{ ?>
+                    <img src="<?= base_url('assets/men.jpg')?>" style="width:100px;" alt="">
+                <?php }?>
                     <p><?= $this->session->userdata('nama')?></p>
                 </div>
                 <a href="<?= base_url('index.php/Dashboard')?>">
@@ -88,7 +92,11 @@ display: block;
             <!-- alert -->
             <div class="d-flex" style="width:1010px; height:130px; margin-left:180px; margin-top:-45px">
                 <div class="">
+                <?php if ($this->session->userdata('gender') == "Perempuan") {?>
                     <img src="<?= base_url('assets/women.png')?>" style="width:110px;">
+                <?php }else{ ?>
+                    <img src="<?= base_url('assets/menLogin.png')?>" style="width:110px;">
+                <?php }?>
                 </div>
                 <div class="alert alert-light" role="alert" style="width:490px; height:50px; margin: 10px;margin-top:30px;border-radius:15px">
                     Semoga nilaimu tidak mengkhinati hasil kerja kerasmuya~

@@ -22,7 +22,9 @@ class praktikan extends CI_Controller {
         else{
             $query = $this->praktikanModel->getMahasiswaById($this->input->post('nim'));
             if(($query)&&(password_verify($this->input->post('password'), $query["password" ]))){
+
                 $this->session->set_userdata($query);
+                //var_dump($this->session->userdata('tanggalLahir'));
                 $this->load->view('Dashboard');
             }else{
               $this->session->set_flashdata('message','<div class ="alert alert-danger role = alert">NIM atau Password Salah</div>');
@@ -65,6 +67,21 @@ class praktikan extends CI_Controller {
         };
         
     }
+    public function ubahPassword(){
+        $this->form_validaation->set_rules('passLama','passLama','required|trim');
+        $this->form_validaation->set_rules('passBaru','passBaru','required|trim');
+        $this->form_validaation->set_rules('rePass','rePass','required|trimmatches[passBaru]');
+        if($this->form_validation->run()== false){
+            redirect();
+        }
+        else{
+           if(password_verify($this->input->post('password'),$this->session->userdata(["password"]))){
+               $this->praktikanModel->ubahPass(password_hash($this->post->('passBaru'),PASSWORD_DEFAULT));
+             } 
+        }
+
+    }
+
     public function logout(){
         $this->session->unset_userdata('nim');
         redirect(base_url());

@@ -5,7 +5,11 @@
         <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/header.css">
         <div class="sidenav">
                 <div class="profile">
-                    <img src="<?= base_url('assets/intersection1.png')?>" style="width:100px;" alt="">
+                    <?php if ($this->session->userdata('gender') == "Perempuan") {?>
+                        <img src="<?= base_url('assets/intersection1.png')?>" style="width:100px;" alt="">
+                    <?php }else{ ?>
+                        <img src="<?= base_url('assets/men.jpg')?>" style="width:100px;" alt="">
+                    <?php }?>
                     <p><?= $this->session->userdata('nama')?></p>
                 </div>
                 <a class="linkside nav-link" style="color:#6E87FD" href="<?= base_url('index.php/Dashboard')?>">
@@ -40,7 +44,11 @@
             <!-- alert -->
             <div class="d-flex" style="background-color: #CED7FE; width:710px; height:120px; margin-left:290px; border-radius:10px;">
                <h4>Selamat datang kembali, <?= $this->session->userdata('nama')?>!</h4>
-               <img src="<?= base_url('assets/women.png')?>" style="width:130px; margin-left:150px;">
+               <?php if ($this->session->userdata('gender') == "Perempuan") {?>
+                    <img src="<?= base_url('assets/women.png')?>" style="width:130px; margin-left:150px;">
+                <?php }else{ ?>
+                    <img src="<?= base_url('assets/menLogin.png')?>" style="width:130px; margin-left:150px;">
+                <?php }?>
             </div>
             <!-- end alert -->
 
@@ -75,59 +83,12 @@
     </div>
     <!-- end container -->
 
-<<<<<<< HEAD
-    <body>
-    <div class="container" style="margin-top:130px;">
-        <!-- ini side bar -->
-        <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/header.css">
-        <div class="sidenav">
-                <div class="profile">
-                    <img src="<?= base_url('assets/men.jpg')?>" style="width:100px;" alt="">
-                    <p><?= $this->session->userdata('nama')?></p>
-                </div>
-                <a class="linkside nav-link" style="color:#6E87FD" href="<?= base_url('index.php/Dashboard')?>">
-                    <img src="<?= base_url('assets/home (1).png')?>" style="width:20px;margin-right:10px;margin-left:-25px" alt="">
-                    Beranda
-                </a>
-                <a href="<?= base_url('index.php/mulaiPraktikum')?>">
-                    <img src="<?= base_url('assets/edit.png')?>" style="width:20px;margin-right:10px;margin-left:-25px" alt="">
-                    Mulai Praktikum
-                </a>
-                <a href="#uploadJawaban" data-toggle="collapse">
-                    <img src="<?= base_url('assets/file.png')?>" style="width:20px;margin-right:10px;margin-left:-25px" alt="">    
-                    Upload Jawaban
-                </a>
-                <div id="uploadJawaban" class="collapse">
-                    <a href="<?= base_url('index.php/formUpload')?>" style="margin-left:30px">Form Upload Jawaban</a>
-                    <a href="<?= base_url('index.php/hasilUpload')?>" style="margin-left:30px">Hasil Upload Jawaban </a>
-                </div>
-                <a href="<?= base_url('index.php/nilai')?>">
-                    <img src="<?= base_url('assets/bar-chart.png')?>" style="width:20px;margin-right:10px;margin-left:-25px" alt="">
-                    Nilai
-                </a>
-                <a href="<?= base_url('index.php/data')?>">
-                    <img src="<?= base_url('assets/list.png')?>" style="width:20px;margin-right:10px;margin-left:-25px" alt="">
-                    Data IFLAB
-                </a>
-        </div>
-        <!-- end sidebar -->
-
-        <!-- main -->
-        <div class="main">
-            <!-- alert -->
-            <div class="d-flex" style="background-color: #CED7FE; width:710px; height:120px; margin-left:290px; border-radius:10px;">
-               <h4>Selamat datang kembali, <?= $this->session->userdata('nama')?>!</h4>
-               <img src="<?= base_url('assets/menLogin.png')?>" style="width:130px; margin-left:150px;">
-            </div>
-            <!-- end alert -->
-=======
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script type="text/javascript">
         var speedCanvas = document.getElementById("speedChart");
 
         Chart.defaults.global.defaultFontFamily = "Lato";
         Chart.defaults.global.defaultFontSize = 14;
->>>>>>> f1b6c9d0ab60ed9d061200c468d62512d4e834bf
 
         var speedData = {
         labels: ["mod1", "mod2", "mod3", "mod4", "mod5", "mod6", "mod7", "mod8"],
