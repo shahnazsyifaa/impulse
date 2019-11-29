@@ -139,7 +139,7 @@
                         </div>
                         <div class="form-group row" style="margin-left:5px">
                             <label for="inputPassword3" class="col-sm-3 col-form-label">Agama</label>
-                            <select class="form-control col-sm-7" style="left:14px" name="agama" value="<?= $this->session->userdata('agama') ?>">
+                            <select class="form-control col-sm-7" style="left:14px" name="agama" selected value="<?= $this->session->userdata('agama') ?>">
                                 <option>Islam</option>
                                 <option>Khatolik</option>
                                 <option>Budha</option>

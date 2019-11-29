@@ -82,7 +82,7 @@
         <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/header.css">
         <div class="sidenav">
                 <div class="profile">
-                    <img src="<?= base_url('assets/intersection1.png')?>" style="width:100px;" alt="">
+                    <img src="<?= base_url('assets/men.jpg')?>" style="width:100px;" alt="">
                     <p><?= $this->session->userdata('nama')?></p>
                 </div>
                 <a class="linkside nav-link" style="color:#6E87FD" href="<?= base_url('index.php/Dashboard')?>">
@@ -117,7 +117,7 @@
             <!-- alert -->
             <div class="d-flex" style="background-color: #CED7FE; width:710px; height:120px; margin-left:290px; border-radius:10px;">
                <h4>Selamat datang kembali, <?= $this->session->userdata('nama')?>!</h4>
-               <img src="<?= base_url('assets/women.png')?>" style="width:130px; margin-left:150px;">
+               <img src="<?= base_url('assets/menLogin.png')?>" style="width:130px; margin-left:150px;">
             </div>
             <!-- end alert -->
 
