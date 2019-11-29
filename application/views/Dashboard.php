@@ -1,5 +1,4 @@
 <?php $this->load->view('templates/header')?>
-<?php if ($this->session->userdata('gender')=="Perempuan") {  ?>
 <body>
     <div class="container" style="margin-top:130px;">
         <!-- ini side bar -->
@@ -59,6 +58,9 @@
                             </div>
                         </div>
                 </div>
+                <div style="position: absolute; margin-left:230px;margin-top:90px;width: 500px;height: 500px">
+                    <canvas id="speedChart"></canvas>
+                </div>
 
                 <!-- kalender -->
                 <div class="d-flex bg-light" style="margin-top:30px; width:300px; height:330px; border-radius:10px">
@@ -72,10 +74,8 @@
         <!-- end main -->
     </div>
     <!-- end container -->
-    
-</body>
-<?php }else{?>
 
+<<<<<<< HEAD
     <body>
     <div class="container" style="margin-top:130px;">
         <!-- ini side bar -->
@@ -120,34 +120,45 @@
                <img src="<?= base_url('assets/menLogin.png')?>" style="width:130px; margin-left:150px;">
             </div>
             <!-- end alert -->
+=======
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="text/javascript">
+        var speedCanvas = document.getElementById("speedChart");
 
-            <!-- konten BERANDA -->
-            <div class="container konten">
-                <!-- grafik -->
-                <div class="d-flex" style="background-color: white; margin-top:30px; margin-left:190px; width:600px; height:330px; border-radius:10px">
-                    <h6>Grafik nilai</h6>
-                        <div class="dropdown">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-                                [JRK] Jaringan Komputer
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#" style="font-size:14px">[JRK] Jaringan Komputer</a>
-                            </div>
-                        </div>
-                </div>
+        Chart.defaults.global.defaultFontFamily = "Lato";
+        Chart.defaults.global.defaultFontSize = 14;
+>>>>>>> f1b6c9d0ab60ed9d061200c468d62512d4e834bf
 
-                <!-- kalender -->
-                <div class="d-flex bg-light" style="margin-top:30px; width:300px; height:330px; border-radius:10px">
-                    <!-- NANTI INI ISINYA KALENDER -->
-                </div>
-                
-            </div>
-            <!-- end konten -->
+        var speedData = {
+        labels: ["mod1", "mod2", "mod3", "mod4", "mod5", "mod6", "mod7", "mod8"],
+        datasets: [{
+            label: "nilai",
+            data: [95, 77, 90, 84, 99, 90, 82, 92],
+            backgroundColor:[
+                'rgba(54, 162, 235, 0.2)'
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)'
+            ],
+            borderWidth: 3
+        }]
+        }; 
 
-        </div>
-        <!-- end main -->
-    </div>
-    <!-- end container -->
+        var chartOptions = {
+        legend: {
+            display: true,
+            position: 'top',
+            labels: {
+            fontColor: 'black'
+            }
+        }
+        };
+
+        var lineChart = new Chart(speedCanvas, {
+        type: 'line',
+        data: speedData,
+        options: chartOptions
+        });
+    </script>
     
 </body>
-<?php };?>

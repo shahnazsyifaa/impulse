@@ -51,7 +51,7 @@
             
             <!-- ini konten MULAI -->
             <div class="container konten">
-                <div class="" style="background-color: white; margin-top:0px; margin-left:190px; width:900px; height:430px; border-radius:10px">
+                <div class="" style="background-color: white; margin-top:0px;margin-left:190px; width:900px; height:400px; border-radius:10px">
                     <h6>Mulai Praktikum</h6>
                     <form>
                         <div class="form-group row" style="margin-left:5px">
