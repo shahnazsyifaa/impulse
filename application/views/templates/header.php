@@ -118,9 +118,9 @@
         <div class="">
             <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown">
             <?php if ($this->session->userdata('gender') == "Perempuan") {?>
-                <img class="logo-profile" src="<?= base_url('assets/intersection1.png')?>" style="width:30px;" alt="">
+                <img class="logo-profile" src="<?= base_url('assets/cewe2.png')?>" style="width:30px;" alt="">
             <?php }else{ ?>
-                <img class="logo-profile" src="<?= base_url('assets/men.jpg')?>" style="width:30px;" alt="">
+                <img class="logo-profile" src="<?= base_url('assets/cowo3.png')?>" style="width:30px;" alt="">
             <?php }?>
             </a>
             <div class="dropdown-menu" style="left:1100px">

@@ -76,7 +76,7 @@ class praktikan extends CI_Controller {
         }
         else{
            if(password_verify($this->input->post('password'),$this->session->userdata(["password"]))){
-               $this->praktikanModel->ubahPass(password_hash($this->post->('passBaru'),PASSWORD_DEFAULT));
+               //$this->praktikanModel->ubahPass(password_hash($this->post->('passBaru'),PASSWORD_DEFAULT));
              } 
         }
 

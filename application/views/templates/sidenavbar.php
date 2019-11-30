@@ -3,9 +3,9 @@
         <div class="sidenav">
                 <div class="profile">
                 <?php if ($this->session->userdata('gender') == "Perempuan") {?>
-                    <img src="<?= base_url('assets/intersection1.png')?>" style="width:100px;" alt="">
+                    <img src="<?= base_url('assets/cewe2.png')?>" style="width:100px;" alt="">
                 <?php }else{ ?>
-                    <img src="<?= base_url('assets/men.jpg')?>" style="width:100px;" alt="">
+                    <img src="<?= base_url('assets/cowo3.png')?>" style="width:100px;" alt="">
                 <?php }?>
                     <p><?= $this->session->userdata('nama')?></p>
                 </div>

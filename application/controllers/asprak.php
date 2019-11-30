@@ -10,9 +10,9 @@ class asprak extends CI_Controller {
 	}
     public function registPraktikan(){
         $data = [
-            'nim' =>"1301174280",
-            'nama' =>"Dionisio Febrianto",
-            'password'=> password_hash("dionisio",PASSWORD_DEFAULT),
+            'nim' =>"1301174401",
+            'nama' =>"Yazid Rahman",
+            'password'=> password_hash("1234",PASSWORD_DEFAULT),
             'kelas'=>"IF41-10"
         ];
         $this->asprakModel->addPraktikan($data);

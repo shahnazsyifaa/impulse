@@ -1,4 +1,6 @@
 <?php $this->load->view('templates/header')?>
+<style>
+</style>
 <body>
     <div class="container" style="margin-top:130px;">
         <!-- ini side bar -->
@@ -6,9 +8,9 @@
         <div class="sidenav">
                 <div class="profile">
                     <?php if ($this->session->userdata('gender') == "Perempuan") {?>
-                        <img src="<?= base_url('assets/intersection1.png')?>" style="width:100px;" alt="">
+                        <img src="<?= base_url('assets/cewe2.png')?>" style="width:100px;border-radius:50%" alt="">
                     <?php }else{ ?>
-                        <img src="<?= base_url('assets/men.jpg')?>" style="width:100px;" alt="">
+                        <img class="rounded profile" src="<?= base_url('assets/cowo3.png')?>" style="width:100px" alt="">
                     <?php }?>
                     <p><?= $this->session->userdata('nama')?></p>
                 </div>
@@ -47,7 +49,7 @@
                <?php if ($this->session->userdata('gender') == "Perempuan") {?>
                     <img src="<?= base_url('assets/women.png')?>" style="width:130px; margin-left:150px;">
                 <?php }else{ ?>
-                    <img src="<?= base_url('assets/menLogin.png')?>" style="width:130px; margin-left:150px;">
+                    <img src="<?= base_url('assets/cowo.png')?>" style="width:170px; margin-left:150px;">
                 <?php }?>
             </div>
             <!-- end alert -->

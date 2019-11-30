@@ -7,7 +7,11 @@
             <!-- ini alert -->
             <div class="d-flex" style="width:1010px; height:130px; margin-left:180px; margin-top:-45px">
                 <div class="">
+                <?php if ($this->session->userdata('gender') == "Perempuan") {?>
                     <img src="<?= base_url('assets/women.png')?>" style="width:110px;">
+                <?php }else{ ?>
+                    <img src="<?= base_url('assets/cowo.png')?>" style="width:140px;">
+                <?php }?>
                 </div>
                 <div class="alert alert-light" role="alert" style="width:300px; height:50px; margin: 10px;margin-top:30px;border-radius:15px">
                    Selamat mengerjakan jurnal

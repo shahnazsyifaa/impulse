@@ -41,9 +41,9 @@ td{
         <div class="sidenav">
             <div class="profile">
                  <?php if ($this->session->userdata('gender') == "Perempuan") {?>
-                    <img src="<?= base_url('assets/intersection1.png')?>" style="width:100px;" alt="">
+                    <img src="<?= base_url('assets/cewe2.png')?>" style="width:100px;" alt="">
                 <?php }else{ ?>
-                    <img src="<?= base_url('assets/men.jpg')?>" style="width:100px;" alt="">
+                    <img src="<?= base_url('assets/cowo3.png')?>" style="width:100px;" alt="">
                 <?php }?>
                 <p><?= $this->session->userdata('nama')?></p>
             </div>
@@ -86,7 +86,7 @@ td{
                 <?php if ($this->session->userdata('gender') == "Perempuan") {?>
                     <img src="<?= base_url('assets/women.png')?>" style="width:110px;">
                 <?php }else{ ?>
-                    <img src="<?= base_url('assets/menLogin.png')?>" style="width:110px;">
+                    <img src="<?= base_url('assets/cowo.png')?>" style="width:140px;">
                 <?php }?>
                 </div>
                 <div class="alert alert-light" role="alert" style="width:350px; height:50px; margin: 10px;margin-top:30px;border-radius:15px;background-color:#C3DF99;opacity:72%;color:black">
