@@ -60,8 +60,9 @@
 
             <!-- konten DATA iflab -->
             <div class="container konten">
-                <div class="" style="background-color: white; margin-top:0px; margin-left:190px; width:900px; height:430px; border-radius:10px">
+                <div class="" style="margin-bottom: 30px; background-color: white; margin-left:190px; width:900px; height:430px; border-radius:10px">
                     <h6>Data IFLAB</h6>
+                    <img src="<?= base_url('assets/data.png')?>" alt="">
                 </div>
             </div>
             <!-- end konten -->

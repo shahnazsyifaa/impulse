@@ -119,6 +119,8 @@
                         <img src="<?= base_url('assets/cowo3.png')?>" style="width:100px;" alt="">
                     <?php }?>
                         <p><?= $this->session->userdata('nama')?></p>
+                        <p><?= $this->session->userdata('nim')?></p>
+                        <p><?= $this->session->userdata('kelas')?></p>
                     </div>
                 </div>
         </div>

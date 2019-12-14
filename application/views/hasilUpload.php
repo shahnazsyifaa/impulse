@@ -131,7 +131,7 @@ td{
                             </tr>
                         </tbody>
                     </table> -->
-                    <table class="data">
+                    <table class="table-bordered data">
                         <tr>
                         <th scope="col">No</th>
                             <th scope="col">MATA PRAKTIKUM</th>

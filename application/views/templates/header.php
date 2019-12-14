@@ -46,17 +46,17 @@
                                 <form style="padding:5px;" method="post" action="<?= base_url('praktikan/ubahPassword') ?>">
                                     <div class="row" style="margin-top:10px">
                                         <div class="col-sm-12">
-                                        <input type="text" class="form-control" placeholder="Password Lama" name="passLama">
+                                        <input type="text" class="form-control" placeholder="Password Lama" name="passLama" style="margin-left:30px;border-radius:10px; width:400px">
                                         </div>
                                     </div>
                                     <div class="row" style="margin-top:10px">
                                         <div class="col-sm-12">
-                                        <input type="text" class="form-control" placeholder="Password Baru" name="passBaru">
+                                        <input type="text" class="form-control" placeholder="Password Baru" name="passBaru" style="margin-left:30px;border-radius:10px; width:400px">
                                         </div>
                                     </div>
                                     <div class="row" style="margin-top:10px">
                                         <div class="col-sm-12">
-                                        <input type="text" class="form-control" placeholder="Konfirmasi Password" name="rePass">
+                                        <input type="text" class="form-control" placeholder="Konfirmasi Password" name="rePass" style="margin-left:30px;border-radius:10px; width:400px">
                                         </div>
                                     </div>
                                 

@@ -136,10 +136,10 @@ display: block;
                         </th>
                         </tr>
                     </thead>    
-                </table>
+                <!-- </table> -->
                    
-                <div class="table-wrapper-scroll-y my-custom-scrollbar">
-                <table  id="dtVerticalScrollExample" class="table-bordered table" cellspacing="0" width="90%">
+                <!-- <div class="table">
+                <table class="table-bordered table" cellspacing="0" width="90%"> -->
                     <tbody>
                         <tr>
                             <td>1</td>

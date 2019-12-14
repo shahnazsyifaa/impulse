@@ -73,8 +73,9 @@
                 </div>
 
                 <!-- kalender -->
-                <div class="d-flex bg-light" style="margin-top:30px; width:300px; height:330px; border-radius:10px">
+                <div class="d-flex " style="margin-top:30px; width:300px; height:330px; border-radius:10px">
                     <!-- NANTI INI ISINYA KALENDER -->
+                    <img src="<?= base_url('assets/kalender.png')?>" alt="" style="margin-left:20px">
                 </div>
                 
             </div>
